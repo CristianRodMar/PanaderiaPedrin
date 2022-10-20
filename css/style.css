@@ -1,23 +1,20 @@
 *{
   margin:0;
   padding: 0;
-  font-family: Roboto;
+  font-family: Oswald;
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #F4D595;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  background-color: #3C2713;
   padding-right: 3rem;
-  padding-left: 3rem;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 header {
   position:fixed;
   width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .logo {
   height: 5.5rem;
@@ -25,21 +22,110 @@ header {
 .menu {
   display: flex;
   flex-direction: row;
-  gap:3rem;
+  gap:1.9rem;
   align-items: center;
 }
 
 .menu a {
-  color:#3C2713;
+  color:#f4d595;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .fa-cart-shopping {
-  color:#3C2713;
+  color:#f4d595;
 }
 
 .fa-user {
+  color:#f4d595;
+}
+
+.cart {
+  background-color: #AE6B31;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: none;
+  border-radius: 10rem;
+  padding:.6rem;
+  padding-top: .7rem;
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+
+.cart:hover {
+  background-color: #a2652f;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.user {
+  background-color: #AE6B31;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: none;
+  border-radius: 10rem;
+  padding:.7rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+
+.user:hover {
+  background-color: #a2652f;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.header-text {
+  display: inline-block;
+  position: relative;
+}
+
+.header-text:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: .1rem;
+  bottom: 0;
+  left: 0;
+  background-color: #f4d595;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+main {
+  padding-top: 5rem;
+}
+.actioncall {
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+  background-image: url('../img/blurbread.png');
+  background-size: cover;
+  background-position: 50% -5rem;
+  background-repeat: no-repeat;
+  height: 15rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.actioncall-box {
   color:#3C2713;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+  justify-content:space-around;
+  background-color: #f4D595;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
