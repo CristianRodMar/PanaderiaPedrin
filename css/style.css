@@ -3,6 +3,9 @@
   padding: 0;
   font-family: Oswald;
 }
+body {
+  background-color: #f4D595;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -105,11 +108,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
   background-image: url('../img/blurbread.png');
-  background-size: cover;
   background-position: 50% -5rem;
+  background-size: 1600px 550px;
   background-repeat: no-repeat;
   height: 15rem;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -123,9 +124,135 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:2rem;
+  gap:1rem;
   justify-content:space-around;
   background-color: #f4D595;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.actioncall-box p {
+  font-size: 1.5rem;
+}
+.pedido {
+  cursor:pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #3C2713;
+  color: #f4D595;
+  border:none;
+  transition: 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.pedido:hover {
+  background-color:#5e3d1e;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.tips {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:3rem;
+}
+
+.tips div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2rem;
+  gap:2rem;
+  padding: 2rem;
+  background-color: #3C2713;
+  color: #f4d595;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tips h2 {
+  border-bottom: solid 2px #f4D595;
+}
+
+.tips i {
+  border:none;
+  border-radius: 20rem;
+  padding: 3rem;
+  color:#f4D595;
+  background-color: #AE6B31;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.reviews-box h2 {
+  color:#3C2713;
+  padding-left: 3rem;
+  margin-top: 2rem;
+}
+
+.reviews {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  gap:1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+
+.reviews div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: #AE6B31;
+  color: #3C2713;
+  padding: 1rem;
+  max-width: 20rem;
+  min-width: 20rem;
+  max-height: 5rem;
+  min-height: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.number-box {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  color:#f4D595;
+  background-color: #3C2713;
+  min-height: 10vh;
+}
+
+.number-box h1 {
+  font-size: 3.5rem;
+}
+
+.links {
+  background-color: #a2652f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.links a {
+  color:#3C2713;
+  text-decoration: none;
+}
+
+.rss-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:.5rem;
+  color:#3C2713;
 }
