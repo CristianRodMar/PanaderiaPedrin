@@ -7,6 +7,8 @@ body {
   background-color: #f4D595;
 }
 nav {
+  background-image: url(../img/BGPAn.png);
+  background-size: contain;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,6 +82,7 @@ header {
 .header-text {
   display: inline-block;
   position: relative;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 .header-text:after {
@@ -221,6 +224,8 @@ main {
 }
 
 .number-box {
+  background-image: url(../img/BGPAn.png);
+  background-size: contain;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -234,6 +239,7 @@ main {
 
 .number-box h1 {
   font-size: 3.5rem;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 .links {
@@ -249,10 +255,22 @@ main {
   text-decoration: none;
 }
 
+.links a:hover {
+  color:#55381c;
+}
+
 .rss-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap:.5rem;
   color:#3C2713;
+}
+
+.fa-brands {
+  cursor:pointer;
+}
+
+.fa-brands:hover {
+  color:#55381c;
 }
