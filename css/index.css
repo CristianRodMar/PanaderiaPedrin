@@ -213,7 +213,7 @@ main {
   flex-direction: column;
   justify-content: center;
   border-radius: 2rem;
-  background-color: #AE6B31;
+  background-color: #d6853d;
   color: #3C2713;
   padding: 1rem;
   max-width: 20rem;
@@ -231,7 +231,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 3rem;
+  margin-top: 1rem;
   color:#f4D595;
   background-color: #3C2713;
   min-height: 10vh;
@@ -243,7 +243,7 @@ main {
 }
 
 .links {
-  background-color: #a2652f;
+  background-color: #d6853d;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -273,4 +273,110 @@ main {
 
 .fa-brands:hover {
   color:#55381c;
+}
+
+.lista-compra {
+  height: 100vh;
+  width: 26vw;
+  background-color: #f4D595;
+  display: none;
+  position: fixed;
+  top:5.5rem;
+  right: 0;
+  box-shadow: 0 100vw 0 100vw rgba(0, 0, 0, 0.5);
+}
+
+.cart:focus + .lista-compra{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoproducto-carro {
+  padding:1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:.4rem;
+  align-items: left;
+}
+
+.producto-carro {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items:center;
+  min-width: 25rem;
+  max-width: 25rem;
+  max-height: 11rem;
+  min-height: 11rem;
+  background-color: #3C2713;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #f4d595;
+}
+
+.producto-carro img {
+  height: 11rem;
+  width: 14rem;
+}
+
+.infoproducto-carro button {
+  width: 9rem;
+  border: none;
+  background-color: #f4d595;
+  color: #3C2713;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20rem;
+  padding: .2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.2s ease;
+}
+
+.infoproducto-carro button:hover {
+  background-color: #d7bc85;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.carro-vacio {
+  height: 100%;
+  display: flex;
+  gap:2rem;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  color:#3C2713;
+}
+
+.carro-vacio i {
+  border-radius: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.menu-carro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  margin-top:11rem;
+  background-color: #3C2713;
+}
+
+.menu-carro button{
+  border: none;
+  background-color: #f4d595;
+  color: #3C2713;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.2s ease;
+}
+
+.menu-carro button:hover{
+  background-color: #d7bc85;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
