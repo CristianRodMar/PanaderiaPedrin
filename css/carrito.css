@@ -1,0 +1,17 @@
+.lista-productos {
+  display: flex;
+  flex-direction: column;
+  margin:5rem;
+  gap:1rem;
+}
+
+.producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3C2713;
+  border-radius: 20rem;
+}
+.producto img {
+  height: 15rem;
+}

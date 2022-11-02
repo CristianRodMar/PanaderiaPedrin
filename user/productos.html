@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" href="../img/icono.png" />
 </head>
 <body>
+  <script src="../js/app.js" type="text/javascript"></script>
   <header>
     <nav>
       <img class="logo" src="../img/logo.png" placeholder="Logo Panadería Pedrín">
@@ -18,7 +19,7 @@
         <a href="../index.html" class="header-text">Inicio</a>
         <a href="#" class="header-text">Productos</a>
         <a href="#" class="header-text">Pedidos Especiales</a>
-        <button class="cart"><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
+        <button class="cart" onclick="showCart()"><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
         <div class="lista-compra">
           <div class="listado">
             <div class="producto-carro">
@@ -39,7 +40,7 @@
             </div>
           </div>
           <div class="menu-carro">
-            <a href="#"><button>Ir mi carro de la compra</button></a>
+            <a href="../user/carrito.html"><button>Ir mi carro de la compra</button></a>
           </div>
         </div>
         <button class="user"><i class="fa-solid fa-user fa-2x"></i></button>
