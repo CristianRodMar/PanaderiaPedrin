@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Carrito</title>
   <link href="../css/index.css" rel="stylesheet" type="text/css">
-  <link href="../css/carrito.css" rel="stylesheet" type="text/css">
+  <link href="../css/especiales.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="../img/icono.png" />
 </head>
+
 <body>
   <script src="../js/app.js" type="text/javascript"></script>
   <header>
@@ -19,7 +20,7 @@
       <div class="menu">
         <a href="../index.html" class="header-text">Inicio</a>
         <a href="../user/productos.html" class="header-text">Productos</a>
-        <a href="../user/especiales.html" class="header-text">Pedidos Especiales</a>
+        <a href="#" class="header-text">Pedidos Especiales</a>
         <button class="cart" onclick="showCart()"><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
         <div class="lista-compra">
           <div class="listado">
@@ -49,55 +50,7 @@
     </nav>
   </header>
   <main>
-    <div class="lista-productos">
-      <div class="producto">
-        <img src="../img//pandefault.jpg">
-        <div class="info-producto">
-          <h3>Pan default</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa debitis tempore, eum ducimus impedit
-            perferendis sint quia ex maxime! Nesciunt, aut nemo neque quia quo quas dignissimos dicta cupiditate atque?
-          </p>
-          <h4>Precio: 300€/u</h4>
-        </div>
-        <div class="botones-producto">
-          <div class="cantidad-buttons">
-            <button><i class="fa-solid fa-plus fa-lg"></i></button>
-            <input class="cantidad" type="text" size="3" value="1">
-            <button><i class="fa-solid fa-minus fa-lg"></i></button>
-          </div>
-          <button><i class="fa-solid fa-trash fa-lg"></i></button>
-        </div>
-      </div>
-      <div class="producto">
-        <img src="../img/intolerantepp.jpg">
-        <div class="info-producto">
-          <h3>Pan intolerante al partido popular</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa debitis tempore, eum ducimus impedit
-            perferendis sint quia ex maxime! Nesciunt, aut nemo neque quia quo quas dignissimos dicta cupiditate atque?
-          </p>
-          <h4>Precio: 0.50€/u</h4>
-        </div>
-        <div class="botones-producto">
-          <div class="cantidad-buttons">
-            <button><i class="fa-solid fa-plus fa-lg"></i></button>
-            <input class="cantidad" type="text" size="3" value="1">
-            <button><i class="fa-solid fa-minus fa-lg"></i></button>
-          </div>
-          <button><i class="fa-solid fa-trash fa-lg"></i></button>
-        </div>
-      </div>
-    </div>
-    <div class="resumen">
-      <h2>Resumen</h2>
-      <div class="info-resumen">
-        <p>Precio total: <strong>300.50€</strong></p>
-        <p>Precio total más IVA: <strong>363.63€</strong></p>
-        <p>Fecha de entrega: <strong>04/11/2030 8:21</strong></p>
-      </div>
-      <button class="comprar">Realizar compra</button>
-    </div>
+    
   </main>
   <footer>
     <div class="number-box">
@@ -120,4 +73,5 @@
   </footer>
   <script src="https://kit.fontawesome.com/9392852d69.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
