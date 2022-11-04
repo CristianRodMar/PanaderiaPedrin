@@ -5,13 +5,102 @@
   gap:1rem;
 }
 
+.resumen {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  background-color: #3C2713;
+  border-radius: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#f4D595;
+}
 .producto {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items:stretch;
   background-color: #3C2713;
   border-radius: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+.lista-productos :hover {
+  background-color: #492f17;
+}
+.info-producto {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  color:#f4D595;
+}
+
+.info-producto p {
+  padding-left: 2rem;
+}
+.info-producto h3 {
+  padding-left: 1rem;
+  font-size: 2rem;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.info-producto h4 {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+
+}
+
 .producto img {
   height: 15rem;
+  width: 25rem;
+  border-radius: 20rem 0 0 20rem;
+}
+
+.botones-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 5rem;
+  background-color: transparent !important;
+}
+
+.botones-producto :hover {
+  background-color: #a2652f;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.fa-plus, .fa-minus, .fa-trash {
+  color:#f4D595;
+}
+
+.botones-producto button {
+  cursor: pointer;
+  border: none;
+  width: 2.5rem;
+  border-radius: 10rem;
+  padding:.6rem;
+  background-color: #AE6B31;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.cantidad-buttons:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+.cantidad {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 20rem;
+  text-align: center;
+  color:#3C2713;
+  font-weight: bold;
+  border:none;
+  background-color: #f4D595;
+}
+.cantidad:hover {
+  background-color: #f1d8a6;
 }
