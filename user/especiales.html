@@ -50,7 +50,26 @@
     </nav>
   </header>
   <main>
-    
+    <h2>Personaliza tu pedido</h2>
+    <form action="" method="post">
+      <div class="lineaInput">
+        <label for="descripcion">Describe tu pedido:</label>
+        <textarea cols="100" rows="5" name="descripcion" id="descripcion" placeholder="Escribe tu descripción aqui" required></textarea>
+      </div>
+      <div class="lineaInput">
+        <label for="alergenos">Precauciones a tener en cuenta:</label>
+        <textarea cols="100" rows="1" name="alergenos" id="alergenos" placeholder="Este campo es opcional, introduce aqui tus alergias y precauciones a tener en cuenta"></textarea>
+      </div>
+      <div class="pedidoOpciones">
+        <label for="cantidad">Introduce la cantidad del producto deseado:</label>
+        <input type="number" min="1" max="50" required>
+        <label for="fechaEntrega">Fecha de entrega:</label>
+        <input name="fechaEntrega" id="fechaEntrega" type="date" required>
+        <label for="horaEntrega">Introduce la hora de entrega deseada:</label>
+        <input type="time" name="horaEntrega" id="horaEntrega" min="08:00" max="21:00" required>
+      </div>
+      <input type="submit" value="Agregar a mi Carrito">
+    </form>
   </main>
   <footer>
     <div class="number-box">
